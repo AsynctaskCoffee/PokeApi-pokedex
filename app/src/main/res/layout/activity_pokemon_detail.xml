@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0030"
+    android:orientation="vertical"
+    tools:context=".UI.Activities.PokemonDetailActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ex_design_botom_panel" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pokemon_solid"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/txt_stats"
+                    android:textColor="@android:color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black" />
+
+                <LinearLayout
+                    android:id="@+id/ll_stat_container_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                    android:id="@+id/speed_pb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    app:cpb_background_progressbar_color="#FFCDD2"
+                                    app:cpb_background_progressbar_width="5dp"
+                                    app:cpb_progress="48"
+                                    app:cpb_progress_max="100"
+                                    app:cpb_progressbar_color="#F44336"
+                                    app:cpb_progressbar_width="10dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/speed_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/pokemon_solid"
+                                        android:gravity="center"
+                                        android:textColor="@color/pokeBlue"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/pokemon_solid"
+                                        android:gravity="center"
+                                        android:text="@string/txt_speed"
+                                        android:textColor="@color/pokeBlue"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                    android:id="@+id/defense_pb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    app:cpb_background_progressbar_color="#FFCDD2"
+                                    app:cpb_background_progressbar_width="5dp"
+                                    app:cpb_progress="48"
+                                    app:cpb_progress_max="100"
+                                    app:cpb_progressbar_color="#F44336"
+                                    app:cpb_progressbar_width="10dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/defense_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/pokemon_solid"
+                                        android:gravity="center"
+                                        android:textColor="@color/pokeBlue"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/pokemon_solid"
+                                        android:gravity="center"
+                                        android:text="@string/txt_defence"
+                                        android:textColor="@color/pokeBlue"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                    android:id="@+id/attack_pb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    app:cpb_background_progressbar_color="#FFCDD2"
+                                    app:cpb_background_progressbar_width="5dp"
+                                    app:cpb_progress="48"
+                                    app:cpb_progress_max="100"
+                                    app:cpb_progressbar_color="#F44336"
+                                    app:cpb_progressbar_width="10dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/attack_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/pokemon_solid"
+                                        android:gravity="center"
+                                        android:textColor="@color/pokeBlue"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/pokemon_solid"
+                                        android:gravity="center"
+                                        android:text="@string/txt_attack"
+                                        android:textColor="@color/pokeBlue"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+
+                                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                        android:id="@+id/special_defence_pb"
+                                        android:layout_width="120dp"
+                                        android:layout_height="120dp"
+                                        app:cpb_background_progressbar_color="#FFCDD2"
+                                        app:cpb_background_progressbar_width="5dp"
+                                        app:cpb_progress="48"
+                                        app:cpb_progress_max="100"
+                                        app:cpb_progressbar_color="#F44336"
+                                        app:cpb_progressbar_width="10dp" />
+
+                                    <egolabsapps.basicodemine.pokemonmaster.UI.CustomViews.RingView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_gravity="end|top"
+                                        android:layout_margin="5dp"
+                                        app:color="#66FFCB05"
+                                        app:inner_radius="0dip"
+                                        app:outer_radius="10dip" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/special_defence_tv"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/pokemon_solid"
+                                            android:gravity="center"
+                                            android:textColor="@color/pokeBlue"
+                                            android:textSize="25sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/pokemon_solid"
+                                            android:gravity="center"
+                                            android:text="@string/txt_special_defence"
+                                            android:textColor="@color/pokeBlue"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                </FrameLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:background="@drawable/outer_font_textview" />
+
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                        android:id="@+id/special_attack_pb"
+                                        android:layout_width="120dp"
+                                        android:layout_height="120dp"
+                                        app:cpb_background_progressbar_color="#66FFCB05"
+                                        app:cpb_background_progressbar_width="5dp"
+                                        app:cpb_progress="48"
+                                        app:cpb_progress_max="100"
+                                        app:cpb_progressbar_color="#FFCB05"
+                                        app:cpb_progressbar_width="10dp" />
+
+                                    <egolabsapps.basicodemine.pokemonmaster.UI.CustomViews.RingView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_gravity="end|top"
+                                        android:layout_margin="5dp"
+                                        app:color="#66ff0030"
+                                        app:inner_radius="0dip"
+                                        app:outer_radius="10dip" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/special_attack_tv"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/pokemon_solid"
+                                            android:gravity="center"
+                                            android:textColor="@color/pokeBlue"
+                                            android:textSize="25sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/pokemon_solid"
+                                            android:gravity="center"
+                                            android:text="@string/txt_special_attack"
+                                            android:textColor="@color/pokeBlue"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/outer_font_textview"
+                                    android:tint="@color/colorPrimaryDark" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pokemon_solid"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/txt_attacks"
+                        android:textColor="@android:color/black" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="true">
+
+                        <LinearLayout
+                            android:id="@+id/ll_attack_container_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:animateLayoutChanges="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp" />
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_pokemon_image"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:transitionName="@string/transition_frame" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/item_pokemon_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="175dp"-->
+        <!--android:fontFamily="@font/pokemon_solid"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/pokeYellow"-->
+        <!--android:textSize="20sp" />-->
+
+</FrameLayout>

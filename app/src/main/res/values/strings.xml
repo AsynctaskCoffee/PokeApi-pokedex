@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pokemon Master</string>
+    <string name="txt_discover">Lets Discover</string>
+    <string name="txt_abilities">Abilities</string>
+    <string name="txt_attacks">Ability and Skills</string>
+    <string name="txt_stats">Pokemon Stats</string>
+    <string name="txt_special_attack">Special Attack</string>
+    <string name="txt_special_defence">Special Defense</string>
+    <string name="txt_speed">Speed</string>
+    <string name="txt_defence">Defense</string>
+    <string name="txt_attack">Attack</string>
+</resources>

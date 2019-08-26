@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="avd_anim_duration_default">800</integer>
+    <integer name="anim_duration_default">400</integer>
+    <integer name="anim_duration_short">200</integer>
+</resources>
