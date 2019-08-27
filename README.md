@@ -14,23 +14,20 @@ I prepared this program for the interview of a Dutch company. Those who want to 
 
 ### Gif loading
 
-![](previews/loading_screen.gif)
-
+<img src="previews/loading_screen.gif" width="350">
 
 ### Skill Details
 
-![](previews/details.gif)
-
+<img src="previews/details.gif" width="350">
 
 ### Endless Scroll
 
-![](previews/endlessrecycler.gif) 
+<img src="previews/endlessrecycler.gif" width="350"> 
 
 
 ### Animated Transitions
 
-![](previews/transisitons.gif)
-
+<img src="previews/transisitons.gif" width="350">
 
 ## License
 
