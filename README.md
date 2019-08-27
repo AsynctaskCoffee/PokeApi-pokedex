@@ -12,22 +12,14 @@
 
 I prepared this program for the interview of a Dutch company. Those who want to work on PokeAPi can use it. Design and software belong to me. You can use it as you like. For those who are curious, I got the offer :)
 
-### Gif loading
+### Gif loading                     -                       Skill Details
 
-<img src="previews/loading_screen.gif" width="350">
-
-### Skill Details
-
-<img src="previews/details.gif" width="350">
-
-### Endless Scroll
-
-<img src="previews/endlessrecycler.gif" width="350"> 
+<img src="previews/loading_screen.gif" width="350">  <img src="previews/details.gif" width="350">
 
 
-### Animated Transitions
+### Endless Scroll                  -                       Animated Transitions
 
-<img src="previews/transisitons.gif" width="350">
+<img src="previews/endlessrecycler.gif" width="350">  <img src="previews/transisitons.gif" width="350">
 
 ## License
 
