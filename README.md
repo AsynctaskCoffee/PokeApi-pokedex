@@ -1,5 +1,7 @@
 # PokeApi - Pokedex
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/322cf0f12714442f9075d28ded82058d)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AsynctaskCoffee/PokeApi-pokedex&amp;utm_campaign=Badge_Grade)
+
 > Retrofit
 
 > EndlessRecyclerView
