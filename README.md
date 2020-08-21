@@ -8,7 +8,7 @@
 
 > Elegant Design (transitions)
 
-> BaseActivity & BaseFragment patterns
+> BaseActivity & BaseFragment patterns for beginners
 
 ### Why this project exist ?
 
