@@ -12,7 +12,7 @@
 
 ### Why this project exist ?
 
-I prepared this program for the interview of a Dutch company. Those who want to work on PokeAPi can use it. Design and software belong to me. You can use it as you like. For those who are curious, I got the offer :)
+Beginner & mid level dev challenge example.
 
 ### Gif loading                     -                       Skill Details
 
